@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\huang\\project\\Android_MyDialog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_bg.png",
+        "source": "D:\\huang\\project\\Android_MyDialog\\app\\src\\main\\res\\drawable-hdpi\\login_bg.png"
+    },
+    {
+        "merged": "D:\\huang\\project\\Android_MyDialog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\huang\\project\\Android_MyDialog\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    }
+]

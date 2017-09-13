@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jgduan.activity"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+
+    <!-- <! &#45;&#45; 网络权限 &ndash;&gt; -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <! &#45;&#45; 外部存储读权限，调试工具加载本地补丁需要 &ndash;&gt; -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.jgduan.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jgduan.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24585490-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="6219d668c959c89f8e12f3b36cb35a28" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCRr2zbT5wzOh0srjGk1KHUO0zKOrEAQhPTh7hhjF0ZgDf270RvYV54RNyYWgX0ffCLGmxg8NNK2Ynl9XAfp5ZzWO5tX1setBGqeypxqRp/I4CPWH0UaywcpkdfDb5FCaSGhn1twx42qGRF2l+h7iktZVvX8oW/sMbZFAzw9PYhcBco6mwpBWyu2EIytYOoT8nxuCR+JIR+sUg2pnAINqy57LFWhuvtva8g9oX0XECItEmMVsiJSwe8zRjR/mOG58Vy6yUkPIBOzE9hOqF4td9GRE1psuwjF0sfUt6ZVPRKtijOQHE76f8nvD5aou1gqIHEpmMxagtiP26DNlPg+xNjAgMBAAECggEAd5cPvwAc8xhTdqgP7IT3yyZapO+E+PdFGzGgM8NrcVGFn1lOTjgZupScmRvdI5R2b1njebh3Wkw1HOZbgkCqCkoIfxP10sByeAXfE6qDK7bTA9jZ5HcNoP8GO4smk7mUqzGfqQiwtqGInqbiNiUw/CjmOeDF1lOhB/WjofEUUuFZrFF+7nKrFA6ka4Fy0Ba5fFLfw+BmMe0YCeOS1Xnoq/Yhx4T8/WMvUJoDXW45AGtluTGjaRqejzy7FB2QkwByVWOQA4SinyISh7FvWvcjnejzxLDmnKmi8XXjWfgqco5WPj19f8AQas1gP8l3a/q1wcYCLpnQGleFSGnPL1Gd8QKBgQDDYcE7uip4W0SuXBrzMxI5uIC/WKzKmP3TczLwvmwqJ+2SSmBku9AfmWBIYTOvTq6dCM4o390cZEUc0dSmMHaEGAOjCchmGFqHn3h06ymnBso+9sbCqfRsYtVUaUPoJwQhmOoYx/ISPUnVxPjDOGkty8oDKyh0D/xGY3IBCx8rDQKBgQC+4oHmx9UYGQTqBjfmMKcvnFDo9FIYZA2ckZo/UaYMpQ4ylANBYDy9TF2CZUABfLJq8qOe6nzt6obP8Sk7XqQqUxTvo8qcrIdzyeyf76XAU+XR5LcPXEKchU5vlpPPZeIMLGvJ61Vy80UtqKmDAubW5XTlZNi1oewO5QWyxY/cLwKBgDsKYzYFP6g3DD4UHyC2oh9HHcC0ryJZsPogqZgOMulaP3QhfZdzGaUy1+GHXfLvt9xEOOgpHcvikO/wiG3f3zBzgUXXQvN3EIRDMEdEeMW8S4lTUSSp7u6Bvy1O0fJpN9pfNv5eDUxtsM4kQ3faqA3qsxTaCdNosTcj/eNK1RRRAoGBAKvjfkRZ+HsNtI4kcVvYvgQyh+1ubSrHljZCKxsPpC5Ix4MmI9RQHAH+bUoJcNyl9Gg3/L0SvNLlWOaRbKaor73pOLYe0UnKVuMelvTisWiCZDZg9bNgSh92L05u0sV1IlwB+EJIp5aul8Ho2lQ+Xa5vy5bx++97Uv2KoFn+a3BDAoGBAJLw+QtXHdkrTxvAdKmZeica+TDxC/HBzwTXaqH61l/Rfx8PrL9+B1nJVwJ5Jdc91RuoCrB0mSqajpAKPEJEmYLALW5ma6KG4u9BJgPMFH/BM/aWzhsZ32P4krL4dLHEpThacJvL0zO+vQUqXLv1VxC6FPLCFOlAl77Ot45lDJtD" />
+
+        <service
+            android:name="com.taobao.sophix.aidl.DownloadService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.taobao.hotfix.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
