@@ -14,6 +14,9 @@ import com.jgduan.activity.R;
  */
 public class ModifySystemDialog extends Dialog implements android.view.View.OnClickListener {
 	private String rightText;
+	private String message;
+    private String title;
+    private String leftText;
 	public interface OnDialogClickListener{
 		void  onLeftClickListener();
 		void  onRightClickListener();
@@ -26,22 +29,42 @@ public class ModifySystemDialog extends Dialog implements android.view.View.OnCl
 	private Button confirmBtn;
 	/** 取消按钮 **/
 	private Button cancelBtn;
-	private String title;
-	private String leftText;
 
 	public ModifySystemDialog(Context context) {
 		super(context, R.style.mystyle);
 		this.context = context;
 	}
 
-
-	public ModifySystemDialog setLeftAndRightAndListener(String title, String leftText, String rightText, OnDialogClickListener listener){
+	public ModifySystemDialog setDate(String title, String  message,String leftText, String rightText, OnDialogClickListener listener){
 		this.title = title;
 		this.leftText = leftText;
 		this.rightText = rightText;
 		this.listener = listener;
+		this.message = message;
 		return this;
 	}
+
+    public ModifySystemDialog setTitle(String title){
+        this.title = title;
+        return this;
+    }
+    public ModifySystemDialog setMessage(String message){
+        this.message = message;
+        return this;
+    }
+    public ModifySystemDialog setLeftText(String leftText){
+        this.leftText = leftText;
+        return this;
+    }
+    public ModifySystemDialog setRightText(String rightText){
+        this.rightText = rightText;
+        return this;
+    }
+
+    public ModifySystemDialog setOnDialogClickListener(OnDialogClickListener listener){
+        this.listener = listener;
+        return this;
+    }
 
 
 	@Override
@@ -52,7 +75,9 @@ public class ModifySystemDialog extends Dialog implements android.view.View.OnCl
 		confirmBtn = (Button) findViewById(R.id.confirm_btn);
 		cancelBtn = (Button) findViewById(R.id.cancel_btn);
 		TextView tv_title = (TextView) findViewById(R.id.tv_title);
-		tv_title.setText(title);
+        TextView tv_message = (TextView) findViewById(R.id.tv_message);
+        tv_message.setText(message);
+        tv_title.setText(title);
 		confirmBtn.setText(rightText);
 		cancelBtn.setText(leftText);
 
