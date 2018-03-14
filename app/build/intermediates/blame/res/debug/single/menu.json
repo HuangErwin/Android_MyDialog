@@ -2,5 +2,9 @@
     {
         "merged": "D:\\huang\\project\\Android_MyDialog\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "D:\\huang\\project\\Android_MyDialog\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "E:\\testproject\\Android_MyDialog\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "E:\\testproject\\Android_MyDialog\\app\\src\\main\\res\\menu\\main.xml"
     }
 ]

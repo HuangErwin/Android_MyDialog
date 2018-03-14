@@ -26,15 +26,16 @@ public final class R {
         public static final int right_btn_select=0x7f020008;
     }
     public static final class id {
-        public static final int action_settings=0x7f050009;
-        public static final int cancel_btn=0x7f050006;
-        public static final int confirm_btn=0x7f050007;
+        public static final int action_settings=0x7f05000a;
+        public static final int cancel_btn=0x7f050007;
+        public static final int confirm_btn=0x7f050008;
         public static final int dataBinding=0x7f050000;
         public static final int layout=0x7f050004;
         public static final int onAttachStateChangeListener=0x7f050001;
         public static final int onDateChanged=0x7f050002;
-        public static final int test=0x7f050008;
+        public static final int test=0x7f050009;
         public static final int textWatcher=0x7f050003;
+        public static final int tv_message=0x7f050006;
         public static final int tv_title=0x7f050005;
     }
     public static final class layout {

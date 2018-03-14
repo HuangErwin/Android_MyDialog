@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
-        config {
-            keyAlias 'quanmofang'
-            keyPassword 'quanmofang'
-            storeFile file('C:/keystore/android.keystore')
-            storePassword 'quanmofang'
-        }
+//        config {
+//            keyAlias 'quanmofang'
+//            keyPassword 'quanmofang'
+//            storeFile file('C:/keystore/android.keystore')
+//            storePassword 'quanmofang'
+//        }
     }
     compileSdkVersion 23
     buildToolsVersion "25.0.3"
@@ -22,12 +22,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-            signingConfig signingConfigs.config
+//            signingConfig signingConfigs.config
         }
 
-        debug {
-            signingConfig signingConfigs.config
-        }
+//        debug {
+//            signingConfig signingConfigs.config
+//        }
     }
     dataBinding{
         enabled true
