@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+
+
+
+    <string name="action_settings">设置</string>
+    <string name="hello_world">Hello</string>
+    <string name="exit">退出</string>
+    <string name="exit_app">你确定退出QQ?</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+</resources>
