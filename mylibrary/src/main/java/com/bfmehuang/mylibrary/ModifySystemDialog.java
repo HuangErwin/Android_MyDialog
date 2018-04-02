@@ -1,4 +1,4 @@
-package com.jgduan.utils;
+package com.bfmehuang.mylibrary;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -19,8 +19,8 @@ public class ModifySystemDialog extends Dialog implements android.view.View.OnCl
     private String title;
     private String leftText;
 	public interface OnDialogClickListener{
-		void  onLeftClickListener();
-		void  onRightClickListener();
+		void  onLeftClickListener(ModifySystemDialog dialog);
+		void  onRightClickListener(ModifySystemDialog dialog);
 	}
 	public OnDialogClickListener listener;
 
@@ -94,10 +94,10 @@ public class ModifySystemDialog extends Dialog implements android.view.View.OnCl
 	public void onClick(View v) {
 		int i = v.getId();
 		if (i == R.id.confirm_btn) {
-			listener.onRightClickListener();
+			listener.onRightClickListener(this);
 
 		} else if (i == R.id.cancel_btn) {
-			listener.onLeftClickListener();
+			listener.onLeftClickListener(this);
 
 		}
 	}
